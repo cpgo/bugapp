@@ -1,2 +1,2 @@
 
-Dir["./src/controllers/**.rb"].each { |f| require f }
+Dir["./src/controllers/**/**.rb"].each { |f| require f }
