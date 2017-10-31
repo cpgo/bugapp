@@ -1,7 +1,16 @@
-# frozen_string_literal: true
 source "https://rubygems.org"
 
-git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
 gem "roda"
-gem "pry"
+
+group :development do
+  gem "pry"
+  gem "rubocop", "~> 0.51.0"
+end
+
+group :test do
+  gem "minitest"
+  gem "minitest-capybara"
+  gem "minitest-reporters"
+end

@@ -1,10 +1,10 @@
 require "roda"
-require "./boot/controllers"
+require_relative "boot/controllers"
 
 class App < Roda
   route do |r|
     r.root do
-      MyController.call()
+      MyController.call
     end
   end
 end
