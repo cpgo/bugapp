@@ -10,7 +10,7 @@ group :development do
 end
 
 group :test do
-  gem "minitest"
-  gem "minitest-reporters"
   gem "rack-test"
+  gem "rspec"
+  gem "rspec_junit_formatter"
 end
