@@ -1,3 +1,3 @@
-require_relative "boot"
+require_relative "config/boot"
 
 run App.freeze.app

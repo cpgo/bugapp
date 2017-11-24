@@ -1,8 +1,13 @@
 require_relative "../test_helper"
 
-class HomeTest < CapybaraTestCase
+class HomeTest < Test::Unit::TestCase
+  include Rack::Test::Methods
+  def app
+    App
+  end
+
   def test_root
-    visit "/"
-    assert_response 200
+    get "my_route/bla"
+    assert_equal(last_response.status, 200)
   end
 end

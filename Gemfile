@@ -11,6 +11,5 @@ end
 
 group :test do
   gem "minitest"
-  gem "minitest-capybara"
   gem "minitest-reporters"
 end
