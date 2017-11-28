@@ -1,3 +1,4 @@
+[![CircleCI](https://circleci.com/gh/cpgo/bugapp/tree/master.svg?style=svg)](https://circleci.com/gh/cpgo/bugapp/tree/master)
 # Clientes
 Cadastrar, Editar, Buscar e Excluir  
   NOME, DOCUMENTO, TELEFONE e EMAIL  
