@@ -1,4 +1,5 @@
 dev = ENV["RACK_ENV"] == "development"
+Bundler.setup
 require "pry" if dev
 if dev
   require "logger"
