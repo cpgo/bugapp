@@ -1,7 +1,7 @@
-dev = ENV['RACK_ENV'] == 'development'
-
+dev = ENV["RACK_ENV"] == "development"
+require "pry" if dev
 if dev
-  require 'logger'
+  require "logger"
   logger = Logger.new($stdout)
 end
 
