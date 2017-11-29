@@ -1,7 +1,6 @@
 <h1>Clients List</h1>
 <ul>
   <% model[:clients].each do |m| %>
-    <li> <%= m[:id] %> </li>
-    <li> <%= m[:name] %> </li>
+    <li> id: <%= m[:id] %> - name: <%= m[:name] %> </li>
   <% end %>  
 </ul>
