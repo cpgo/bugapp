@@ -11,7 +11,7 @@ require_relative "boot/serializers"
 
 class App < Roda
   plugin :multi_run
-  run "clients", Web::Routes::Clients
+  run "clients", Web::Main::Routes::Clients
   route do |r|
     r.multi_run
   end

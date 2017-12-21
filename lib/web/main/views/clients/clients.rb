@@ -1,4 +1,4 @@
-class Web::Views::Clients < Cell::ViewModel
+class Web::Main::Views::Clients < Cell::ViewModel
   include ::Cell::Erb
   self.view_paths = ["lib"]
 

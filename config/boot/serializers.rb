@@ -1,5 +1,7 @@
 module Web
-  module Serializers
-    Dir["./lib/web/serializers/**/**.rb"].each { |f| require f }
+  module Main
+    module Serializers
+      Dir["./lib/web/main/serializers/**/**.rb"].each { |f| require f }
+    end
   end
 end

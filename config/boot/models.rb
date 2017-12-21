@@ -1,3 +1,3 @@
 module Schemas
-  Dir["./lib/app/schemas/**/**.rb"].each { |f| require f }
+  Dir["./lib/main/schemas/**/**.rb"].each { |f| require f }
 end

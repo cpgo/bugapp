@@ -1,4 +1,4 @@
-class Web::Serializers::Clients
+class Web::Main::Serializers::Clients
   attr_accessor :models
   def initialize(models)
     @models = models
