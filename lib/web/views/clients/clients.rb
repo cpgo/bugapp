@@ -1,6 +1,6 @@
 class Web::Views::Clients < Cell::ViewModel
   include ::Cell::Erb
-  self.view_paths = ["src"]
+  self.view_paths = ["lib"]
 
   def index
     render
