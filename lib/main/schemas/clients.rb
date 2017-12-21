@@ -1,4 +1,4 @@
-class Schemas::Clients
+class Schemas::Main::Clients
   def self.all_clients
     [
       {
