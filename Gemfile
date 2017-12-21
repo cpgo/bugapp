@@ -9,6 +9,7 @@ gem "rom-sql"
 group :development do
   gem "pry"
   gem "rubocop", "~> 0.51.0"
+  gem "guard-rspec", require: false
 end
 
 group :test do
