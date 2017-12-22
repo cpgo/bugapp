@@ -17,3 +17,6 @@ group :test do
   gem "rspec"
   gem "rspec_junit_formatter"
 end
+
+# Added at 2017-12-21 22:13:48 -0200 by cassio:
+gem "dry-system", "~> 0.8.1"
