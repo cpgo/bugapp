@@ -2,7 +2,7 @@ require_relative "../../spec_helper"
 
 describe "Clients" do
   it "list all clients" do
-    expect(Schemas::Main::Clients.all_clients).to eq(
+    expect(Main::Schemas::Clients.all_clients).to eq(
       [
         {
           id: 1,

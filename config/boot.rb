@@ -6,7 +6,7 @@ require "cells-erb"
 require "guard"
 require_relative "boot/routes"
 require_relative "boot/views"
-require_relative "boot/models"
+require_relative "boot/apps"
 require_relative "boot/serializers"
 
 class App < Roda
