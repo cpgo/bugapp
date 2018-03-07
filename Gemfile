@@ -4,7 +4,9 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 gem "cells", "~> 4.1"
 gem "cells-erb", "~> 0.1.0"
 gem "roda"
-gem "rom-sql"
+gem "rom",     "~> 4.0"
+gem "rom-sql", "~> 2.0"
+gem "pg", "~> 1.0"
 
 group :development do
   gem "pry"

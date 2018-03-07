@@ -1,6 +1,7 @@
-module Main
-  module Schemas
-    class Clients
+module App
+  module Relations
+    class Clients < ROM::Relation[:sql]
+      schema(:clients, infer: true)
       def self.all_clients
         [
           {
