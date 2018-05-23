@@ -1,5 +1,4 @@
 require "pry"
-
-require_relative "config/boot"
+require "config/boot"
 
 run App.freeze.app

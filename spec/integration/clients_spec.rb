@@ -1,7 +1,7 @@
 require_relative "../spec_helper"
 describe "Clients" do
   def app
-    App
+    MainApp
   end
   it "returns ok" do
     get "clients/"

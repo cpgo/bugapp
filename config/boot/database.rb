@@ -1,7 +1,7 @@
-require "rom"
-require "rom-sql"
-
-ROM.container(:sql, "postgres://localhost/bugapp") do |config|
-  # define relations and commands here...
-  config.auto_registration("lib/app")
+module Container
+  def self.env
+    config = ROM::Configuration.new(:sql, "postgres://localhost/bugapp")
+    config.auto_registration("./lib/app")
+    ROM.container(config)
+  end
 end

@@ -3,7 +3,7 @@ class Web::Main::Routes::Clients < Roda
   plugin :empty_root
   route do |r|
     r.root do
-      @clients = Main::Schemas::Clients.all_clients
+      @clients = App::Relations::Clients.all_clients
       r.html do
         Web::Main::Views::Clients.new(clients: @clients).call :index
       end

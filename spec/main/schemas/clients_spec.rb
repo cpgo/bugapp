@@ -2,7 +2,8 @@ require_relative "../../spec_helper"
 
 describe "Clients" do
   it "list all clients" do
-    expect(Main::Schemas::Clients.all_clients).to eq(
+    binding.pry
+    expect(App::Relations::Clients.all_clients).to eq(
       [
         {
           id: 1,

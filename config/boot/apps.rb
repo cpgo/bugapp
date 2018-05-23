@@ -1,1 +1,5 @@
-Dir["./lib/apps/**/**.rb"].each { |f| require f }
+module App
+  module Relations
+    Dir["./lib/app/relations/**.rb"].each { |f| require f }
+  end
+end
