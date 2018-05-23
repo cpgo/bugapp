@@ -1,8 +1,7 @@
-require_relative "../../spec_helper"
+require "spec_helper"
 
 describe "Clients" do
   it "list all clients" do
-    binding.pry
     expect(App::Relations::Clients.all_clients).to eq(
       [
         {
