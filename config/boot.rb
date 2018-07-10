@@ -1,13 +1,6 @@
 require "roda"
 require "json"
-require "rom"
-require "cells"
-require "cells-erb"
-require "guard"
-require_relative "boot/routes"
-require_relative "boot/views"
-require_relative "boot/apps"
-require_relative "boot/serializers"
+require "web/main/routes/clients"
 
 class App < Roda
   plugin :multi_run

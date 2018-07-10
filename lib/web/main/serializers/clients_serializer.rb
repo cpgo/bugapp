@@ -1,10 +1,19 @@
-class Web::Main::Serializers::Clients
-  attr_accessor :models
-  def initialize(models)
-    @models = models
-  end
+require "cells"
+require "cells-erb"
 
-  def index
-    models.to_json
+module Web
+  module Main
+    module Serializers
+      class Clients
+        attr_accessor :models
+        def initialize(models)
+          @models = models
+        end
+
+        def index
+          models.to_json
+        end
+      end
+    end
   end
 end
