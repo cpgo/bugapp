@@ -1,3 +1,6 @@
+require "cells"
+require "cells-erb"
+
 module Web
   module Main
     module Views
