@@ -1,3 +1,5 @@
+$LOAD_PATH.unshift('./lib')
+
 require "pry"
 
 require_relative "config/boot"
