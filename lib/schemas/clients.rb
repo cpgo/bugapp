@@ -1,8 +1,6 @@
-require_relative "../../spec_helper"
-
-describe "Clients" do
-  it "list all clients" do
-    expect(Main::Schemas::Clients.all_clients).to eq(
+module Schemas
+  class Clients
+    def self.all_clients
       [
         {
           id: 1,
@@ -13,6 +11,6 @@ describe "Clients" do
           name: "Client 2"
         }
       ]
-    )
+    end
   end
 end

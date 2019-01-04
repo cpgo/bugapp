@@ -10,7 +10,9 @@ guard :rspec, cmd: "bundle exec rspec" do
   watch(rspec.spec_support) { rspec.spec_dir }
   watch(rspec.spec_files)
 
-  watch(%r{^lib\/(.+)\/schemas\/(.*).rb$}) { |m| "spec/#{m[1]}/schemas/#{m[2]}_spec.rb" }
+  watch(%r{^lib\/schemas\/(.*).rb$}) { |m|
+    "spec/schemas/#{m[1]}_spec.rb"
+  }
 
   # watch(%r{^lib\/app\/(.*).rb$}) { rspec.spec_dir }
   watch(%r{^lib\/web\/(.*).rb$}) { "spec/integration" }
